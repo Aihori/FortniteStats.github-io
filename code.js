@@ -4,7 +4,7 @@ var platformInput = document.getElementById('platform');
 var result = document.querySelector('.result');
 
 const fetchPlayers = async (gamertag, platform) => {
-    const api_call = await fetch(`https://api.fortnitetracker.com/v1/profile/${platform}/${gamertag}`, {
+    const api_call = await fetch(`https://cors-anywhere.herokuapp.com/https://api.fortnitetracker.com/v1/profile/${platform}/${gamertag}`, {
         headers: {
             'TRN-Api-Key': '34cc4e90-6b9f-4f6e-bde3-c8da4516dfd7'
         }
